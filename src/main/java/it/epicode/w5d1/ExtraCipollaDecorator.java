@@ -6,8 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class ExtraCipollaDecorator extends ExtraIngredienti {
 
     public ExtraCipollaDecorator(PizzaAstratta pizzaAstratta){

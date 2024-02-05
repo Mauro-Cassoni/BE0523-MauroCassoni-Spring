@@ -1,10 +1,10 @@
 package it.epicode.w5d1;
 
-public enum Ingredienti {
-    POMODORO,
-    MOZZARELLA,
-    PROSCIUTTO,
-    ANANAS,
-    SALAME,
-    CIPOLLA,
+import lombok.Data;
+
+@Data
+public class Ingredienti {
+    String nome;
+    int calorie;
+    double prezzo;
 }

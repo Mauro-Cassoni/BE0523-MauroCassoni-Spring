@@ -5,9 +5,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class ExtraAnanasDecorator extends ExtraIngredienti {
 
     public ExtraAnanasDecorator(PizzaAstratta pizzaAstratta){
@@ -26,6 +26,8 @@ public class ExtraAnanasDecorator extends ExtraIngredienti {
     public double getPrezzo(){
         return pizzaAstratta.getPrezzo() + 0.79;
     }
+
+    public List<IngredientiEnum> getIngredienti(){return pizzaAstratta.getIngredienti();}
 
 
 

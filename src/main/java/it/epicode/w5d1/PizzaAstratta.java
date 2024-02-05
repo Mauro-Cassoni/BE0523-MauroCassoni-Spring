@@ -5,14 +5,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
 public abstract class PizzaAstratta {
     String nome = "";
     int calorie;
     double prezzo;
-//    Ingredienti ingredienti;
+    List<IngredientiEnum> ingredienti;
 
     public String getNome(){
         return nome;
@@ -25,5 +25,10 @@ public abstract class PizzaAstratta {
     public double getPrezzo(){
         return prezzo;
     }
+
+    public List<IngredientiEnum> getIngredienti(){
+        return ingredienti;
+    }
+
 
 }

@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Data
 public class Margherita extends PizzaAstratta{
@@ -12,6 +13,7 @@ public class Margherita extends PizzaAstratta{
         nome = "Margherita";
         calorie = 1104;
         prezzo = 4.99;
+        ingredienti = List.of(IngredientiEnum.MOZZARELLA,IngredientiEnum.POMODORO);
     }
 
     @Override
