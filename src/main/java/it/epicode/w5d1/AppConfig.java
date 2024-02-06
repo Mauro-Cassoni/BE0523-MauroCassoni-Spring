@@ -75,12 +75,8 @@ public class AppConfig {
     }
 
     @Bean("margherita")
-    public Pizza margherita(){
-        Pizza margherita = new Pizza();
-        margherita.setNome("margherita");
-        margherita.setCalorie(mozzarella().getCalorie() + pomodoro().getCalorie());
-        margherita.setPrezzo(4.99);
-        margherita.setIngredienti(List.of(pomodoro(),mozzarella()));
+    public PizzaAstratta margherita(){
+        PizzaAstratta margherita = new Margherita();
         return margherita;
     }
 
